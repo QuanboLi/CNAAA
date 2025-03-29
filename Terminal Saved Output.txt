@@ -1,0 +1,266 @@
+Last login: Sat Mar 29 16:59:10 on ttys089
+(base) richman@RichdeMacBook-Pro ~ % /usr/local/bin/python3 /Users/richman/Desktop/Proxy.py 127.0.0.1 8080
+Created socket
+Port is bound
+Listening to socket
+Waiting for connection...
+Received a connection
+Received request:
+< GET /http://http.badssl.com/ HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.7.1
+Accept: */*
+
+
+Method:		GET
+URI:		/http://http.badssl.com/
+Version:	HTTP/1.1
+
+Requested Resource:	/
+Cache location:		./http.badssl.com/default
+Connecting to:		http.badssl.com
+
+Connected to origin Server
+Forwarding request to origin server:
+> GET / HTTP/1.1
+> Host: http.badssl.com
+> 
+> 
+Request sent to origin server
+
+cached directory ./http.badssl.com
+cache file closed
+origin response received. Closing sockets
+client socket shutdown for writing
+Waiting for connection...
+Received a connection
+Received request:
+< GET /http://http.badssl.com/fakefile.html HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.7.1
+Accept: */*
+
+
+Method:		GET
+URI:		/http://http.badssl.com/fakefile.html
+Version:	HTTP/1.1
+
+Requested Resource:	/fakefile.html
+Cache location:		./http.badssl.com/fakefile.html
+Connecting to:		http.badssl.com
+
+Connected to origin Server
+Forwarding request to origin server:
+> GET /fakefile.html HTTP/1.1
+> Host: http.badssl.com
+> 
+> 
+Request sent to origin server
+
+cached directory ./http.badssl.com
+cache file closed
+origin response received. Closing sockets
+client socket shutdown for writing
+Waiting for connection...
+Received a connection
+Received request:
+< GET /http://httpbin.org/redirect-to?url=http://http.badssl.com&status_code=301 HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.7.1
+Accept: */*
+
+
+Method:		GET
+URI:		/http://httpbin.org/redirect-to?url=http://http.badssl.com&status_code=301
+Version:	HTTP/1.1
+
+Requested Resource:	/redirect-to?url=http://http.badssl.com&status_code=301
+Cache location:		./httpbin.org/redirect-to?url=http://http.badssl.com&status_code=301
+Connecting to:		httpbin.org
+
+Connected to origin Server
+Forwarding request to origin server:
+> GET /redirect-to?url=http://http.badssl.com&status_code=301 HTTP/1.1
+> Host: httpbin.org
+> 
+> 
+Request sent to origin server
+
+cached directory ./httpbin.org/redirect-to?url=http:
+cache file closed
+origin response received. Closing sockets
+client socket shutdown for writing
+Waiting for connection...
+Received a connection
+Received request:
+< GET /http://httpbin.org/redirect-to?url=http://http.badssl.com&status_code=302 HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.7.1
+Accept: */*
+
+
+Method:		GET
+URI:		/http://httpbin.org/redirect-to?url=http://http.badssl.com&status_code=302
+Version:	HTTP/1.1
+
+Requested Resource:	/redirect-to?url=http://http.badssl.com&status_code=302
+Cache location:		./httpbin.org/redirect-to?url=http://http.badssl.com&status_code=302
+Connecting to:		httpbin.org
+
+Connected to origin Server
+Forwarding request to origin server:
+> GET /redirect-to?url=http://http.badssl.com&status_code=302 HTTP/1.1
+> Host: httpbin.org
+> 
+> 
+Request sent to origin server
+
+cached directory ./httpbin.org/redirect-to?url=http:
+cache file closed
+origin response received. Closing sockets
+client socket shutdown for writing
+Waiting for connection...
+Received a connection
+Received request:
+< GET /http://httpbin.org/cache/0 HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.7.1
+Accept: */*
+
+
+Method:		GET
+URI:		/http://httpbin.org/cache/0
+Version:	HTTP/1.1
+
+Requested Resource:	/cache/0
+Cache location:		./httpbin.org/cache/0
+Connecting to:		httpbin.org
+
+Connected to origin Server
+Forwarding request to origin server:
+> GET /cache/0 HTTP/1.1
+> Host: httpbin.org
+> 
+> 
+Request sent to origin server
+
+cached directory ./httpbin.org/cache
+cache file closed
+origin response received. Closing sockets
+client socket shutdown for writing
+Waiting for connection...
+Received a connection
+Received request:
+< GET /http://httpbin.org/cache/3600 HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.7.1
+Accept: */*
+
+
+Method:		GET
+URI:		/http://httpbin.org/cache/3600
+Version:	HTTP/1.1
+
+Requested Resource:	/cache/3600
+Cache location:		./httpbin.org/cache/3600
+Connecting to:		httpbin.org
+
+Connected to origin Server
+Forwarding request to origin server:
+> GET /cache/3600 HTTP/1.1
+> Host: httpbin.org
+> 
+> 
+Request sent to origin server
+
+cached directory ./httpbin.org/cache
+cache file closed
+origin response received. Closing sockets
+client socket shutdown for writing
+Waiting for connection...
+Received a connection
+Received request:
+< GET /http://httpbin.org/cache/3600 HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.7.1
+Accept: */*
+
+
+Method:		GET
+URI:		/http://httpbin.org/cache/3600
+Version:	HTTP/1.1
+
+Requested Resource:	/cache/3600
+Cache location:		./httpbin.org/cache/3600
+Cache hit! Loading from cache file: ./httpbin.org/cache/3600
+Sent to the client:
+Connecting to:		httpbin.org
+
+Connected to origin Server
+Forwarding request to origin server:
+> GET /cache/3600 HTTP/1.1
+> Host: httpbin.org
+> 
+> 
+Request sent to origin server
+
+origin server request failed. Broken pipe
+Waiting for connection...
+Received a connection
+Received request:
+< GET /http://http-textarea.badssl.com/icons/icon-red.png HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.7.1
+Accept: */*
+
+
+Method:		GET
+URI:		/http://http-textarea.badssl.com/icons/icon-red.png
+Version:	HTTP/1.1
+
+Requested Resource:	/icons/icon-red.png
+Cache location:		./http-textarea.badssl.com/icons/icon-red.png
+Connecting to:		http-textarea.badssl.com
+
+Connected to origin Server
+Forwarding request to origin server:
+> GET /icons/icon-red.png HTTP/1.1
+> Host: http-textarea.badssl.com
+> 
+> 
+Request sent to origin server
+
+cached directory ./http-textarea.badssl.com/icons
+cache file closed
+origin response received. Closing sockets
+client socket shutdown for writing
+Waiting for connection...
+Received a connection
+Received request:
+< GET http://http.badssl.com/ HTTP/1.1
+
+Method:		GET
+URI:		http://http.badssl.com/
+Version:	HTTP/1.1
+
+Requested Resource:	/
+Cache location:		./http.badssl.com/default
+Cache hit! Loading from cache file: ./http.badssl.com/default
+Sent to the client:
+Connecting to:		http.badssl.com
+
+Connected to origin Server
+Forwarding request to origin server:
+> GET / HTTP/1.1
+> Host: http.badssl.com
+> 
+> 
+Request sent to origin server
+
+cached directory ./http.badssl.com
+cache file closed
+origin response received. Closing sockets
+client socket shutdown for writing
+Waiting for connection...
+^CFailed to accept connection
+(base) richman@RichdeMacBook-Pro ~ % 
